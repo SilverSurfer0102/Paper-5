@@ -1,0 +1,14 @@
+{
+  "roc_auc": 0.4177777777777778,
+  "optimal_threshold": 81.6165771484375,
+  "accuracy": 0.5333333333333333,
+  "precision": 0.75,
+  "recall": 0.1,
+  "f1_score": 0.17647058823529413,
+  "confusion_matrix": {
+    "tn": 29,
+    "fp": 1,
+    "fn": 27,
+    "tp": 3
+  }
+}

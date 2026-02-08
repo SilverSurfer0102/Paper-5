@@ -1,0 +1,6 @@
+{
+  "total_samples": 60,
+  "correct": 32,
+  "false_positives_count": 1,
+  "false_negatives_count": 27
+}

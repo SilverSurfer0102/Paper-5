@@ -1,0 +1,51 @@
+{
+  "total_samples": 60,
+  "correct": 32,
+  "accuracy_pct": 53.333333333333336,
+  "false_positives": {
+    "count": 1,
+    "examples": [
+      {
+        "id": "a04",
+        "perplexity": 88.51334381103516,
+        "topic": "Spotify Interpretable Clustering",
+        "text": "To evaluate clustering quality, researchers use internal metrics that reflect cohesion and separation. The silhouette score summarizes how close each song is to its own cluster compared with other clusters, while the Davies–Bouldin index penalizes overlapping groups. Stability checks can test whether clusters persist under resampling, noise, or small changes in preprocessing. Visualization is also common, using PCA or t-SNE to project high-dimensional features into two dimensions and inspect whether clusters form coherent regions. These tools do not prove “correct” clusters, but they help compare methods and identify clusterings that are both structured and explainable."
+      }
+    ]
+  },
+  "false_negatives": {
+    "count": 27,
+    "examples": [
+      {
+        "id": "h14",
+        "perplexity": 11.468521118164062,
+        "topic": "Alleged Mastermind Among Four Arrested After Pakistan Mosque Blast",
+        "text": "Four people have been arrested on suspicion of facilitating a suicide bombing that killed more than 30 people on Friday, Pakistan's interior minister has said.\nMohsin Naqvi said an Afghan national who is alleged to be the mastermind behind the attack was among those detained. One counter-terrorism officer was killed and three more were wounded in the raids to arrest the suspects, he added.\nThe Islamic State group has claimed responsibility for the bombing that targeted Friday prayers at the Shia mosque in the Tarlai area, when it was packed with worshippers.\nMore than 160 people were injured in the blast, which was the deadliest in the capital for more than a decade."
+      },
+      {
+        "id": "h23",
+        "perplexity": 12.252922058105469,
+        "topic": "Missing Malaysia Plane Mh370: What We Know",
+        "text": "The missing Malaysia Airlines plane, flight MH370, had 239 people on board and was en route from Kuala Lumpur to Beijing on 8 March 2014 when air traffic control staff lost contact with it.\nThe search for the plane eventually focused on a 120,000 sq km area of seabed about 2,000km off the coast of Perth in the southern Indian Ocean. It has now been suspended with no trace of the aircraft found there, and is likely to remain the world's greatest aviation mystery.\nThis is what we know.\nWatch the video below to find out about the jet's last known movements."
+      },
+      {
+        "id": "h11",
+        "perplexity": 13.697685241699219,
+        "topic": "Global Warming",
+        "text": "In its Sixth Assessment Report, the IPCC expects global warming to reach 1.0 °C to 1.8 °C by the end of the 21st century in a scenario with very low greenhouse gas emissions, 2.1 °C to 3.5 °C in a scenario with medium emissions, and 3.3 °C to 5.7 °C in a scenario with very high greenhouse gas emissions. [18] With the climate protection policies implemented by 2020, the world is heading for a warming of approximately 3.2 °C by 2100, but if current technology and climate protection trends are reversed or climate sensitivity is higher, warming of more than 4 °C is also possible. In its World Energy Outlook 2021, the International Energy Agency estimates the temperature increase at 2.6 °C based on the assumptions of the Stated Policies Scenario; he Climate Action Tracker gives an expected value of 2.6 °C for the year 2100 under Policies & Action"
+      },
+      {
+        "id": "h10",
+        "perplexity": 15.59981632232666,
+        "topic": "Global Warming",
+        "text": "Global warming—colloquially also referred to as “climate change,” “global warming,” or “global heating”—refers to the current rise in the average temperature of the Earth's atmosphere and oceans. It is a man-made climate change[1.1] resulting from net greenhouse gas emissions caused by the use of fossil fuels and unsustainable forestry and agriculture since the beginning of industrialization. Greenhouse gas emissions increase the retention capacity for infrared heat radiation in the troposphere, thereby amplifying the natural greenhouse effect. The most important greenhouse gas in current global warming is carbon dioxide (CO2), followed by others such as methane and nitrous oxide. The average CO2 concentration in the Earth's atmosphere measured by the Mauna Loa measuring station rose from around 280 ppm before the start of industrialization to over 420 ppm today."
+      },
+      {
+        "id": "h12",
+        "perplexity": 20.874610900878906,
+        "topic": "Hydrogen",
+        "text": "Most of the hydrogen on Earth is bound in water, a compound with oxygen, 11% of whose mass consists of hydrogen. Hydrogen occurs bound to other elements in all plants and living organisms. Hydrogen is an integral part of almost all organic chemical substances.\n\nHydrogen is the chemical element with the lowest atomic mass. Its most common isotope, protium, is the only stable isotope without a neutron. It consists only of a proton and an electron. There are two other naturally occurring hydrogen isotopes, of which non-radioactive deuterium accounts for 0.0156% of natural hydrogen, while radioactive tritium, formed in the upper layers of the Earth's atmosphere, occurs only in minute quantities. [14]\n\nUnder conditions that normally prevail on Earth (see normal conditions), the gaseous element hydrogen does not exist as atomic hydrogen with the symbol H, but as molecular hydrogen with the symbol H2, a colorless and odorless gas."
+      }
+    ]
+  }
+}

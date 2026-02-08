@@ -1,0 +1,344 @@
+{
+  "metadata": {
+    "description": "Human-geschriebene Texte für Paper 5",
+    "created": "2026-02-07",
+    "total_count": 30,
+    "source": "Konvertiert aus Human.xlsx",
+    "collectors": [
+      "Dein Name",
+      "Kommilitone Name"
+    ]
+  },
+  "texts": [
+    {
+      "id": "h01",
+      "text": "Abstract—This study investigates whether unsupervised clus-\ntering algorithms can discover interpretable structure in music\ndata. Using the Top Spotify Songs 2023 dataset (953 tracks, 8\naudio features), we apply three clustering algorithms—K-Means,\nHierarchical Clustering, and DBSCAN—and rigorously assess\ncluster validity and interpretability. Our analysis reveals that\nHierarchical Clustering with complete linkage achieves the best\nperformance (Silhouette Score: 0.57, Davies-Bouldin Index: 0.73),\nidentifying two distinct clusters: “Energetic Pop/Dance” (72.3%)\nand “Acoustic/Chill Ballads” (27.7%). All three algorithms con-\nverge on a two-cluster solution, suggesting genuine structure\nin the data rather than algorithmic artifacts. The discovered\nclusters align with domain knowledge about music genres and\ndemonstrate actionable differentiation in audio features. We\nconclude that the Spotify audio features capture meaningful\nmusical characteristics that enable interpretable segmentation,\nwith practical applications for playlist curation and music rec-\nommendation systems.",
+      "label": "human",
+      "source": "Paper 3",
+      "topic": "Spotify Interpretable Clustering",
+      "word_count": 134,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Paper 3"
+    },
+    {
+      "id": "h02",
+      "text": "A. Clustering Algorithms\nClustering partitions data into groups based on similarity\nwithout requiring labeled training data. Three major paradigms\nexist, each with distinct assumptions and strengths.\nK-Means [1] is a centroid-based algorithm that assigns\npoints to the nearest cluster center iteratively. Starting with k\nrandom centroids, the algorithm alternates between assigning\neach point to its nearest centroid and updating centroids as\ncluster means until convergence. K-Means assumes spherical\nclusters of",
+      "label": "human",
+      "source": "Paper 3",
+      "topic": "Spotify Interpretable Clustering",
+      "word_count": 70,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Paper 3"
+    },
+    {
+      "id": "h03",
+      "text": "This study investigated whether clustering algorithms dis-\ncover interpretable structure in Spotify music data. Our key\nfindings:\n1) Yes, clusters are interpretable: Two distinct groups\nemerge—“Energetic Pop/Dance” and “Acoustic/Chill\nBallads”—aligned with musical intuition and domain\nknowledge\n2) Best method: Hierarchical Clustering with complete\nlinkage achieves Silhouette = 0.57, significantly outper-\nforming K-Means (0.23) and DBSCAN (0.20)\n3) Genuine structure: Algorithm convergence on k = 2\nindicates real patterns inherent to the data, not artifacts\nof any single method\n4) Actionable results: Clusters enable practical applica-\ntions in playlist generation and music recommendation\nAnswer to Research Question: The discovered clusters\ndo align with interpretable structure. Spotify’s audio features\ncapture meaningful musical characteristics that support unsu-\npervised segmentation into recognizable, actionable categories.",
+      "label": "human",
+      "source": "Paper 3",
+      "topic": "Spotify Interpretable Clustering",
+      "word_count": 120,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Paper 3"
+    },
+    {
+      "id": "h04",
+      "text": "Complete linkage measures maximum inter-cluster distance,\nmaking it robust to outliers and effective for identifying\ncompact, well-separated clusters. K-Means’ lower Silhouette\n(0.23) suggests the clusters aren’t perfectly spherical—an\nassumption K-Means makes but complete linkage does not.\nDBSCAN’s poor performance can be attributed to the\nnature of music audio features. In high-dimensional spaces\nwith relatively homogeneous feature distributions, DBSCAN\nstruggles to identify density variations [2]. Music features tend\nto be uniformly distributed within the feature space rather\nthan forming dense cores with sparse boundaries, which is\nthe structure DBSCAN is designed to detect. Additionally, the\n13.2% outlier rate, while informative for identifying atypical\nsongs, reduces the data available for cluster formation and\nlowers overall validation scores.",
+      "label": "human",
+      "source": "Paper 3",
+      "topic": "Spotify Interpretable Clustering",
+      "word_count": 115,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Paper 3"
+    },
+    {
+      "id": "h05",
+      "text": "Internal validation metrics assess cluster quality without\nground truth labels. The Silhouette Score, introduced by\nRousseeuw [4], measures how similar points are to their\nown cluster versus neighboring clusters, ranging from -1\n(misclassified) to 1 (well-clustered). For point i, the silhouette\nvalue is defined as s(i) = b(i)−a(i)\nmax(a(i),b(i)) , where a(i) is mean\nintra-cluster distance and b(i) is mean nearest-cluster distance.\nThe Davies-Bouldin Index [5] computes the average simi-\nlarity between each cluster and its most similar cluster, where\nsimilarity is the ratio of within-cluster distances to between-\ncluster distance. Lower values indicate better separation.\nThe Calinski-Harabasz Index [6], also known as the\nVariance Ratio Criterion, evaluates the ratio of between-cluster\ndispersion to within-cluster dispersion. Higher values indicate\ndenser, better-separated clusters. This metric favors convex\nclusters and may bias toward solutions with more clusters.",
+      "label": "human",
+      "source": "Paper 3",
+      "topic": "Spotify Interpretable Clustering",
+      "word_count": 135,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Paper 3"
+    },
+    {
+      "id": "h06",
+      "text": "1. Domain Alignment: The clusters correspond to rec-\nognized music categories—high-energy dance music versus\nacoustic ballads. These categories are familiar to music listen-\ners and industry professionals, validating that the clustering\ncaptures meaningful distinctions.\n2. Feature Coherence: The differentiating features (energy,\nacousticness, danceability) have clear musical meanings. High\nenergy corresponds to loud, fast, intense music; high acoustic-\nness indicates organic instrumentation. These are not arbitrary\nstatistical patterns but perceptually meaningful attributes.\n3. Actionability: The clusters enable distinct practical ap-\nplications. Playlist curators can automatically separate workout\nmusic (Cluster 0) from relaxation music (Cluster 1). Recom-\nmendation systems can match user mood or activity to the\nappropriate cluster.\n4. Algorithm Agreement: Three fundamentally differ-\nent algorithms—centroid-based, density-based, and hierarchi-\ncal—independently identify two clusters. This convergence\nsuggests the structure is inherent to the data rather than\nimposed by any single algorithm’s assumptions.\nConclusion: The discovered clusters are highly inter-\npretable.",
+      "label": "human",
+      "source": "Paper 3",
+      "topic": "Spotify Interpretable Clustering",
+      "word_count": 148,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Paper 3"
+    },
+    {
+      "id": "h07",
+      "text": "K-Means: Tested k ∈ {2,3,...,8}. Optimal k selected\nvia Elbow method (within-cluster sum of squares, WCSS)\nand Silhouette analysis. Parameters: n_init=10 (10 random\ninitializations, best result kept), random_state=42 for re-\nproducibility.\nHierarchical Clustering: Agglomerative approach testing\nthree linkage methods (ward, complete, average). Cut height\ndetermined from dendrogram analysis, seeking the largest\nvertical gap indicating natural cluster boundaries.\nDBSCAN: Parameters selected via k-distance plot, which\ngraphs the distance to the k-th nearest neighbor for each\npoint, sorted. The “elbow” indicates appropriate ϵ. Tested\nϵ ∈ {1.0,1.5,2.0} and min_samples ∈ {3,5,10}. Final\nparameters: ϵ= 1.5, min_samples = 5.",
+      "label": "human",
+      "source": "Paper 3",
+      "topic": "Spotify Interpretable Clustering",
+      "word_count": 96,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Paper 3"
+    },
+    {
+      "id": "h08",
+      "text": "1) Sunlight directly heats the surface.\n2a) The heat radiation is retained by greenhouse gases, causing further warming.\n2b) Without greenhouse gases, the heat radiation could escape directly and cool the surface more efficiently.\nThe greenhouse effect is the effect of greenhouse gases in the atmosphere that prevent the spread of heat radiation, thus causing a higher temperature on the planet's surface. The effect arises because the cloudless part of the atmosphere is largely transparent to short-wave radiation from the sun, but less transparent to long-wave infrared radiation emitted by the warm Earth's surface and heated air. The greenhouse effect is a natural phenomenon; however, human activities are enriching the Earth's atmosphere with additional greenhouse gases, which intensify the greenhouse effect and lead to global warming.\"\n\"\n\nTranslated with DeepL.com (free version)",
+      "label": "human",
+      "source": "Wikipedia",
+      "topic": "Greenhouse Effect",
+      "word_count": 132,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Wikipedia"
+    },
+    {
+      "id": "h09",
+      "text": "The term greenhouse effect does not refer to the effect in a glass greenhouse, but rather vividly describes the related effect in the atmosphere. The similarity to a glass house is that light usually penetrates unhindered into the interior, while the resulting heat cannot escape from the system as easily. This heat barrier to the outside causes heat to accumulate, which raises the internal temperature. Heat loss also increases until it exactly balances the radiated power in the higher temperature equilibrium.",
+      "label": "human",
+      "source": "Wikipedia",
+      "topic": "Greenhouse Effect",
+      "word_count": 81,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Wikipedia"
+    },
+    {
+      "id": "h10",
+      "text": "Global warming—colloquially also referred to as “climate change,” “global warming,” or “global heating”—refers to the current rise in the average temperature of the Earth's atmosphere and oceans. It is a man-made climate change[1.1] resulting from net greenhouse gas emissions caused by the use of fossil fuels and unsustainable forestry and agriculture since the beginning of industrialization. Greenhouse gas emissions increase the retention capacity for infrared heat radiation in the troposphere, thereby amplifying the natural greenhouse effect. The most important greenhouse gas in current global warming is carbon dioxide (CO2), followed by others such as methane and nitrous oxide. The average CO2 concentration in the Earth's atmosphere measured by the Mauna Loa measuring station rose from around 280 ppm before the start of industrialization to over 420 ppm today.",
+      "label": "human",
+      "source": "Wikipedia",
+      "topic": "Global Warming",
+      "word_count": 128,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Wikipedia"
+    },
+    {
+      "id": "h11",
+      "text": "In its Sixth Assessment Report, the IPCC expects global warming to reach 1.0 °C to 1.8 °C by the end of the 21st century in a scenario with very low greenhouse gas emissions, 2.1 °C to 3.5 °C in a scenario with medium emissions, and 3.3 °C to 5.7 °C in a scenario with very high greenhouse gas emissions. [18] With the climate protection policies implemented by 2020, the world is heading for a warming of approximately 3.2 °C by 2100, but if current technology and climate protection trends are reversed or climate sensitivity is higher, warming of more than 4 °C is also possible. In its World Energy Outlook 2021, the International Energy Agency estimates the temperature increase at 2.6 °C based on the assumptions of the Stated Policies Scenario; he Climate Action Tracker gives an expected value of 2.6 °C for the year 2100 under Policies & Action",
+      "label": "human",
+      "source": "Wikipedia",
+      "topic": "Global Warming",
+      "word_count": 150,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Wikipedia"
+    },
+    {
+      "id": "h12",
+      "text": "Most of the hydrogen on Earth is bound in water, a compound with oxygen, 11% of whose mass consists of hydrogen. Hydrogen occurs bound to other elements in all plants and living organisms. Hydrogen is an integral part of almost all organic chemical substances.\n\nHydrogen is the chemical element with the lowest atomic mass. Its most common isotope, protium, is the only stable isotope without a neutron. It consists only of a proton and an electron. There are two other naturally occurring hydrogen isotopes, of which non-radioactive deuterium accounts for 0.0156% of natural hydrogen, while radioactive tritium, formed in the upper layers of the Earth's atmosphere, occurs only in minute quantities. [14]\n\nUnder conditions that normally prevail on Earth (see normal conditions), the gaseous element hydrogen does not exist as atomic hydrogen with the symbol H, but as molecular hydrogen with the symbol H2, a colorless and odorless gas.",
+      "label": "human",
+      "source": "Wikipedia",
+      "topic": "Hydrogen",
+      "word_count": 149,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Wikipedia"
+    },
+    {
+      "id": "h13",
+      "text": "Ukrainian President Volodymyr Zelensky says the US wants the war with Russia to end by June, adding both sides had been invited to the US for talks next week.\n\"America proposed for the first time that the two negotiating teams – Ukraine and Russia – meet in the United States of America, probably in Miami, in a week. We confirmed our participation,\" he said.\nThere was no immediate comment from Washington or Moscow, but US President Donald Trump has been pushing for an end for the conflict since he took office again more than a year ago.\nMeanwhile, Russia has continued its attacks on Ukraine's energy infrastructure - causing further widespread blackouts during freezing conditions.",
+      "label": "human",
+      "source": "BBC",
+      "topic": "Us Wants Russia And Ukraine To End War By June, Says Zelensky",
+      "word_count": 115,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from BBC "
+    },
+    {
+      "id": "h14",
+      "text": "Four people have been arrested on suspicion of facilitating a suicide bombing that killed more than 30 people on Friday, Pakistan's interior minister has said.\nMohsin Naqvi said an Afghan national who is alleged to be the mastermind behind the attack was among those detained. One counter-terrorism officer was killed and three more were wounded in the raids to arrest the suspects, he added.\nThe Islamic State group has claimed responsibility for the bombing that targeted Friday prayers at the Shia mosque in the Tarlai area, when it was packed with worshippers.\nMore than 160 people were injured in the blast, which was the deadliest in the capital for more than a decade.",
+      "label": "human",
+      "source": "BBC",
+      "topic": "Alleged Mastermind Among Four Arrested After Pakistan Mosque Blast",
+      "word_count": 113,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from BBC "
+    },
+    {
+      "id": "h15",
+      "text": "An ore-wagon creaking over a desert road, going at a snail-like pace, heading for a jumble of bright-hued, rock-ribbed hills. The land a desolation of sand, harsh sage, cactus, which rattled like paper in the heat-laden breeze. The sky a brassy dome, almost green in its intensity, out of which flamed a sun.\nFar above the hills circled the buzzards, seemingly suspended on invisible wires, for they hung motionless in that thin air—watching, always watching. On all sides stretched the desert, broken here and there in the distance by black peaks, as though at some remote period this country had been a vast mountain range, which had sifted full of sand, until only the peaks remained.",
+      "label": "human",
+      "source": "Projekt Gutenberg",
+      "topic": "Title: The Curse Of The Painted Cliffs",
+      "word_count": 116,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Projekt Gutenberg"
+    },
+    {
+      "id": "h16",
+      "text": "She lifted her martini toward me in an amiable toast. I must have blushed like a kid.\n“Me and my big ears,” I mumbled.\n“We are a bunch of magpies,” Madame Outre replied. “You could not help overhearing. Be so good as to join us, s’il vous plait!”\nSo-o-o ... that’s about it, Sarge. Just as casual as that. She offered me a part-time job, I accepted, and a week or so later we finished hammering up shelves, cleaning the fixtures, and setting out the stock.\nWe were in business.",
+      "label": "human",
+      "source": "Projekt Gutenberg",
+      "topic": "Eau De Morgue",
+      "word_count": 90,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Projekt Gutenberg"
+    },
+    {
+      "id": "h17",
+      "text": "Well, things began to get pretty sticky between the Duchess and Madame Outre. They came to a head—oh, about two weeks ago. I was in the storeroom, a little alcove in the rear adjoining Madame’s laboratory.\nAround five o’clock the Duchess came flouncing in. “My dear,” she boomed, like a brass cannon, “my friends and I have decided you must—but you simply must—move uptown. To waste your time down here among silly little secretaries—ridiculous! Fantastic! I won’t hear of it another moment!”\nMadame kept calm. “You forget,” she said, “that it was you who urged me to open up shop here. Since then I have found many new friends. I have become established. The Village is now part of my life.”\n“Nonsense!” the Duchess flared. “This is no ‘life.’ It is a humiliation to me and my friends!",
+      "label": "human",
+      "source": "Projekt Gutenberg",
+      "topic": "Eau De Morgue",
+      "word_count": 138,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Projekt Gutenberg"
+    },
+    {
+      "id": "h18",
+      "text": "This weekend is something of a national holiday in the United States, as the Seattle Seahawks and the New England Patriots battle for the coveted Vince Lombardi Trophy at Super Bowl LX in Santa Clara, California, on Sunday. Seattle is hoping to win the franchise’s second championship, while New England could become the all-time leader for most Super Bowl wins. There will also be excitement off the playing field. Bad Bunny—who recently made history when his Debí tirar más fotos became the first Spanish-language recording to win the Grammy for album of the year—is headlining the halftime show. And of course there will be lots and lots of commercials.",
+      "label": "human",
+      "source": "Britannica",
+      "topic": "From Sport To Spectacle",
+      "word_count": 109,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Britannica"
+    },
+    {
+      "id": "h19",
+      "text": "In a perfect world, every flight would take off promptly and make it to its final destination 20 minutes early. But in the real world, delays and cancellations are all too common.\n\nFrom thunderstorms to mechanical issues to air traffic control snafus, there are plenty of reasons to prevent your plane from making an on-time departure.\n\nThe good news is that travelers have options and access to some compensation when wait times drag on. Here’s what to know when the dreaded “delayed” or “canceled” warning shows up on the airport’s departure board.",
+      "label": "human",
+      "source": "National Geographic",
+      "topic": "Here’S What To Do If Your Flight Is Canceled Or Delayed In The U.S.",
+      "word_count": 92,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from National Geographic "
+    },
+    {
+      "id": "h20",
+      "text": "What do I do if my flight is delayed? \nAt first, your options are: Wait it out on the original itinerary, try to get on another flight with the same airline, or rebook for free with a partner airline (not all carriers allow this).\n\nOnce the delay reaches three hours on a domestic flight (six for an international one), the “automatic refund” rule kicks in. This new policy, which went into effect in 2024, requires an airline to refund the full amount of your trip if you so choose, even if you bought a nonrefundable ticket, regardless of the reason for the delay. \n\nHowever, Janice Hough, a Northern California-based travel adviser, warns that the refund works only if you decide to stay home, or you can find another way to get there, such as an affordable last-minute alternate flight.",
+      "label": "human",
+      "source": "National Geographic",
+      "topic": "Here’S What To Do If Your Flight Is Canceled Or Delayed In The U.S.",
+      "word_count": 139,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from National Geographic "
+    },
+    {
+      "id": "h21",
+      "text": "Joshua Tree National Park is often described as an out-of-this-world experience or healing for one’s soul, says Donovan Smith, the park’s public information officer. “With blue sunny skies almost year-round, the wide-open vistas allow the visitor to experience the true vastness of the landscape from almost anywhere in the park. It’s an extraordinary place to connect with the beauty and reliance nature has to offer.”\n\nNewcomers among the three million visitors who pass through each year are often surprised by the abrupt transition between the park’s Mojave and Colorado deserts.",
+      "label": "human",
+      "source": "National Geographic",
+      "topic": "Everything You Should Know About Joshua Tree National Park",
+      "word_count": 90,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from National Geographic "
+    },
+    {
+      "id": "h22",
+      "text": "Expert recommendations and tips\nA visit isn’t complete without walking among the Joshua trees (Yucca brevifolia), rumored to be the inspiration for Dr. Seuss’s The Lorax, according to Jeff Ohlfs, chief park ranger at Joshua Tree National Park. Not to be type-cast, this park speaks for more than just Joshua trees. The diversity of plant species here is so wide that the park’s name was originally proposed to be Desert Plants National Park.\n\nOhlfs also recommends visitors do their homework to optimize your time in the park. After reading up on the park and what it has to offer, plan your trip around the resources that interest you. Are you a hiker? A climber? A bird watcher? Do you count butterfly species? Read reviews so you know how long it takes for a tour or the distance between locations and adjust your stay accordingly.",
+      "label": "human",
+      "source": "National Geographic",
+      "topic": "Everything You Should Know About Joshua Tree National Park",
+      "word_count": 144,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from National Geographic "
+    },
+    {
+      "id": "h23",
+      "text": "The missing Malaysia Airlines plane, flight MH370, had 239 people on board and was en route from Kuala Lumpur to Beijing on 8 March 2014 when air traffic control staff lost contact with it.\nThe search for the plane eventually focused on a 120,000 sq km area of seabed about 2,000km off the coast of Perth in the southern Indian Ocean. It has now been suspended with no trace of the aircraft found there, and is likely to remain the world's greatest aviation mystery.\nThis is what we know.\nWatch the video below to find out about the jet's last known movements.",
+      "label": "human",
+      "source": "BBC News Explainers",
+      "topic": "Missing Malaysia Plane Mh370: What We Know",
+      "word_count": 102,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from BBC News Explainers"
+    },
+    {
+      "id": "h24",
+      "text": "What is halal meat?\nHalal is Arabic for permissible. Halal food is that which adheres to Islamic law, as defined in the Koran.\nThe Islamic form of slaughtering animals or poultry, dhabiha, involves killing through a cut to the jugular vein, carotid artery and windpipe. Animals must be alive and healthy at the time of slaughter and all blood is drained from the carcass. During the process, a Muslim will recite a dedication, know as tasmiya or shahada.\nThere is debate about elements of halal, such as whether stunning is allowed.\nStunning cannot be used to kill an animal, according to the Halal Food Authority (HFA), a non-profit organisation that monitors adherence to halal principles. But it can be used if the animal survives and is then killed by halal methods, the HFA adds.",
+      "label": "human",
+      "source": "BBC News Explainers",
+      "topic": "What Is Halal Meat?",
+      "word_count": 134,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from BBC News Explainers"
+    },
+    {
+      "id": "h25",
+      "text": "Walkers are being warned to protect themselves against tick bites after a wet and mild winter. Just how dangerous are ticks, asks Vanessa Barford.\nExperts have warned, external that ticks - blood-sucking, disease-carrying arachnids - appear to be on the rise in the UK.\nRichard Wall, professor of Zoology at Bristol University, says there's no definitive data on how many ticks are in the country. Some areas have none. Others - usually woodland and heath areas - may have more than 100 per square metre. However, the general consensus among rural communities is they are on the up, largely as a result of the warmer and wetter weather (good breeding conditions) and the growing number of wild deer (ticks like living on their skin).",
+      "label": "human",
+      "source": "BBC News Explainers",
+      "topic": "Who, What, Why: How Dangerous Are Tick Bites In The Uk?",
+      "word_count": 124,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from BBC News Explainers"
+    },
+    {
+      "id": "h26",
+      "text": "Taken together, the speeches portray a president struggling to reconcile his central claim — that he has fixed the cost-of-living crisis — with inflation near 3% over the past year and voters’ lived experience of paying more for grocery staples. The price of ground beef, for example, is up 18% since Trump took office a year ago, while ground coffee prices are up 29%.\nRepublican strategists told Reuters that his mixed messaging on the top issue for voters risks creating a credibility gap for him and the Republican Party ahead of the November midterms, when control of Congress will be at stake. Opinion polls show voters are deeply unhappy with Trump's handling of the economy.",
+      "label": "human",
+      "source": "Reuters",
+      "topic": "In Economic Speeches, Trump Claims Inflation Victory Nearly 20 Times Even As Prices Bite",
+      "word_count": 115,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Reuters"
+    },
+    {
+      "id": "h27",
+      "text": "While Araqchi said no date had yet been set for the next round of negotiations, U.S. President Donald Trump said they could take place early next week. \"We and Washington believe it should be held soon,” Araqchi said.\nTrump has threatened to strike Iran after a U.S. naval buildup in the region, demanding that it renounce uranium enrichment, a possible pathway to nuclear bombs, as well as stopping ballistic missile development and support for armed groups around the region. Tehran has long denied any intent to weaponise nuclear fuel production.\nWhile both sides have indicated readiness to revive diplomacy over Tehran's long-running nuclear dispute with the West, Araqchi balked at widening the talks out.",
+      "label": "human",
+      "source": "Reuters",
+      "topic": "If Us Attacks, Iran Says It Will Strike Us Bases In The Region",
+      "word_count": 114,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from Reuters"
+    },
+    {
+      "id": "h28",
+      "text": "A sunny day in early 2026 revealed the remnants of a winter storm on Arizona’s high desert—and produced a striking, if somewhat puzzling, display of light and shadow in the Grand Canyon. An astronaut aboard the International Space Station captured these photographs of the distinct topography on January 26, 2026.\n\nSnow flurries were flying in the area the previous two days, as they were across much of the central and eastern U.S. Hazardous conditions within Grand Canyon National Park prompted officials to close Desert View Drive, which runs along a portion of the South Rim shown in the photo above, and to issue warnings about icy trails.  When the road reopened around the time of these photos, a layer of white remained on both the South Rim, at an elevation of around 7,000 feet, and the North Rim, at about 8,000 feet.",
+      "label": "human",
+      "source": "NASA Earth Observatory",
+      "topic": "A Grand, Snow-Rimmed Canyon",
+      "word_count": 142,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from NASA Earth Observatory"
+    },
+    {
+      "id": "h29",
+      "text": "No Olympic competitions covers more ground than the 50-kilometer cross-country ski races. The grueling event takes more than 2 hours to complete, requiring competitors to ski a distance longer than a marathon. That's still, however, less than an eighth of the distance between the two official host cities of the 2026 Winter Olympics and Paralympics—Milan and Cortina d’Ampezzo.\n\nWith events spread across more than 22,000 square kilometers (8,500 square miles) and eight cities or towns in northern Italy, these are the most geographically dispersed Games in Olympic history. The decentralized design was intentional, allowing planners to control costs and make the event more sustainable by using existing venues rather than constructing several expensive new facilities. More than 90 percent of the venues are existing or temporary facilities, including some refurbished facilities that were used in the 1956 Cortina d’Ampezzo Games.",
+      "label": "human",
+      "source": "NASA Earth Observatory",
+      "topic": "Milano Cortina 2026",
+      "word_count": 140,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from NASA Earth Observatory"
+    },
+    {
+      "id": "h30",
+      "text": "Tis the season for long and ruler-straight cracks in McMurdo Sound's sea ice. Though natural breaks in sea ice are called leads, the better term for the human-made fracture seen in these satellite images is a ship channel.\n\nIn the austral summer, usually in January, an icebreaker rams a path through the fast ice—a type of sea ice that is anchored to the shore—that often covers McMurdo Sound. This annual effort allows cargo ships to reach McMurdo Station, a research base operated by the United States Antarctic Program. The U.S. Coast Guard Cutter Polar Star completed the task in January 2026, arriving after breaking a path through several miles of ice between the Ross Sea and an ice pier at McMurdo. Most of the channel was cut between January 19 and 20.",
+      "label": "human",
+      "source": "NASA Earth Observatory",
+      "topic": "Cracking Antarctic Sea Ice",
+      "word_count": 132,
+      "author": "Paper 3 Author",
+      "date_collected": "2026-02-07",
+      "notes": "Text from NASA Earth Observatory"
+    }
+  ]
+}
